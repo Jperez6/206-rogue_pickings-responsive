@@ -136,20 +136,6 @@ header nav ul li a{
 	text-align: left;
 }
 
-/* .section-one h4 { */
-	/* padding: 10px 0; */
-/* }
-
-.section-two { */
-	/* border-left: 1px solid #eee;
-	border-right: 1px solid #eee; */
-/* }
-
-.section-two h4,
-.section-three h4 { */
-	/* padding: 10px 30px; */
-/* } */
-
 .menu {
 	list-style: none;
 	padding: 0;
@@ -169,20 +155,17 @@ header nav ul li a{
 .address {
 	font-size: 1em;
 	line-height: 24px;
-	padding-left: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	/* clear: both; */
-	text-align: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
@@ -192,90 +175,47 @@ footer span {
 }
 
 /* ----------- Tablets larger than 768px wide ----------- */
-@media all and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	
-	body {
-		font-size: 1em;
-	}
-
 	.bottom-section {
-		flex-flow: row;
-		width: 100%;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-top: 1px solid #eee;
 	}
 
 	.section-one, .section-two, .section-three {
-		width: 33%;
-		justify-content: flex-start;
+		border-top: none;
+		flex-basis: 30%;
 	}
 
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
+		padding: 0 20px;
 	}
 
   }
   
   /* ----------- Monitors larger than 1200px wide ----------- */
-  @media screen and (min-width: 1200px) {
-	/* body {
-	  
-	} */
-
-	.container {
-		margin: 0 auto;
-	}
+  @media only screen and (min-width: 1200px) {
 
 	header {
-		margin: 0 auto;
-		height: 110px;
+		justify-content: space-between;
 	}
 
 	header h1 {
-		padding: 38px 0;
-		width: 50%;
-		height: 100%;
-		align-items: flex-start;
-		float: left;
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
 	}
 
 	header nav {
-		padding: 46px 0;
-		float: right;
-		width: 50%;
+		width: 40%;
 	}
 
 	header nav ul {
-		justify-content: flex-end;
-	}
-
-	header nav ul li {
-		padding: 0 10px;
-		width: auto;
-	}
-
-	hr {
-		display: none;
-	}
-
-	.main-title h3 {
-		padding: 5px 0;
-	}
-
-	.section-one h4 {
-		padding: 10px 0;
-	}
-	
-	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
-	}
-	
-	.section-two h4,
-	.section-three h4 {
-		padding: 10px 30px;
-	}
-
-	.menu li {
-		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
 	}
   }
